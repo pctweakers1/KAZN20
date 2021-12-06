@@ -1,0 +1,9 @@
+# mount point       fstype    device                                                                flags
+/system       ext4     system                                     flags=display="System";backup=1;logical
+/cache        ext4     /dev/block/bootdevice/by-name/cache        flags=display="Cache"
+/vendor       ext4     vendor                                     flags=display="Vendor";backup=1;logical
+/data         ext4     /dev/block/bootdevice/by-name/userdata     flags=display="Data"
+/sdcard1      vfat     /dev/block/mmcblk1p1                       flags=display="Sdcard1"
+/boot         emmc     /dev/block/bootdevice/by-name/boot         flags=display="Boot";backup=1;flashimg=1
+/recovery     emmc     /dev/block/bootdevice/by-name/recovery     flags=display="Recovery";backup=1;flashimg=1
+/misc         emmc     /dev/block/bootdevice/by-name/misc         flags=display="Misc";backup=1;flashimg=1
